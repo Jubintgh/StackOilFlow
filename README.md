@@ -57,7 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
             body: JSON.stringify({ answer_body: formVal.value, question_id: id, _csrf: cs }, formVal.value = "")
         })
         const result = await text.json();
-        console.log(result.createAns.answer_body)
         const container = document.getElementById('answer-container')
         container.innerHTML += `<div id="q-answers"> <p>${result.createAns.answer_body}</p></div>`
 
@@ -145,8 +144,7 @@ In order to handle the actual voting portion of the logic, both answer and quest
                         method: "POST",
                     });
                     const json = await res.json();
-                    if(!res.ok) console.log(json.message)
-                    console.log(json)
+                    if(!res.ok) 
                     votes.innerHTML = json.voteCount;
                 }
 
