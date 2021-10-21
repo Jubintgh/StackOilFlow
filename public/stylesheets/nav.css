@@ -96,7 +96,6 @@ a {
     /* NO NEED FOR POS RELATIVE HERE
 TOOK IT OUT FOR BETTER ALIGNMENT */
     box-sizing: border-box;
-    width: 60px;
     border-radius: 3px;
     border: 1px solid #1a4768;
     font-size: 13px;
@@ -108,6 +107,7 @@ TOOK IT OUT FOR BETTER ALIGNMENT */
     top:3px;
     font-size: 13px;
     text-align: center;
+    min-width: 71.1px;
 }
 #login-nav:hover {
     background-color: #c6dcec;
@@ -138,7 +138,6 @@ TOOK IT OUT FOR BETTER ALIGNMENT */
 /* NO NEED FOR POS RELATIVE HERE
 TOOK IT OUT FOR BETTER ALIGNMENT */
     box-sizing: border-box;
-    width: 67px;
     border-radius: 3px;
     border: 1px solid #04365a;
     font-size: 13px;
@@ -148,6 +147,7 @@ TOOK IT OUT FOR BETTER ALIGNMENT */
     height: 35.2px;
     top:1px;
     font-size: 13px;
+    min-width: 70.1px;
 }
 #signup-nav:hover {
     background-color: #0576c7;
